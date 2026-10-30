@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 数据与缓存（体积大 / 受数据集许可限制，不入库）
+dataset/
+outputs/features/
+outputs/**/*.pt
+outputs/**/*.pth
+outputs/**/*.ckpt
+*.mp4
+*.avi
+*.wav
+*.mp3
+
+# 日志与临时文件
+*.log
+tmp/
+.DS_Store
+Thumbs.db

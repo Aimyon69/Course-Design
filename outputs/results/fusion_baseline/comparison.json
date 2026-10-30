@@ -1,0 +1,26 @@
+{
+  "concat": {
+    "accuracy": 0.7462,
+    "macro_f1": 0.6673,
+    "per_class_f1": {
+      "Negative": 0.8277,
+      "Neutral": 0.4179,
+      "Positive": 0.7564
+    },
+    "best_valid_macro_f1": 0.6043,
+    "best_epoch": 31,
+    "n_params": 131331
+  },
+  "lmf": {
+    "accuracy": 0.674,
+    "macro_f1": 0.5831,
+    "per_class_f1": {
+      "Negative": 0.7675,
+      "Neutral": 0.3231,
+      "Positive": 0.6588
+    },
+    "best_valid_macro_f1": 0.5832,
+    "best_epoch": 18,
+    "n_params": 129691
+  }
+}

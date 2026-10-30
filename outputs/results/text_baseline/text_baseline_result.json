@@ -1,0 +1,63 @@
+{
+  "task": "CH-SIMS 文本单模态三分类（bert-base-chinese CLS 冻结特征）",
+  "seed": 42,
+  "split": {
+    "train": 1368,
+    "valid": 456,
+    "test": 457
+  },
+  "mlp_head": {
+    "accuracy": 0.6608,
+    "macro_f1": 0.5921,
+    "per_class_f1": {
+      "Negative": 0.7468,
+      "Neutral": 0.3514,
+      "Positive": 0.6781
+    },
+    "confusion_matrix": [
+      [
+        177,
+        35,
+        36
+      ],
+      [
+        26,
+        26,
+        17
+      ],
+      [
+        23,
+        18,
+        99
+      ]
+    ],
+    "best_valid_macro_f1": 0.5317,
+    "best_epoch_valid": null
+  },
+  "logistic_regression": {
+    "accuracy": 0.5667,
+    "macro_f1": 0.4997,
+    "per_class_f1": {
+      "Negative": 0.6527,
+      "Neutral": 0.2817,
+      "Positive": 0.5646
+    },
+    "confusion_matrix": [
+      [
+        156,
+        37,
+        55
+      ],
+      [
+        33,
+        20,
+        16
+      ],
+      [
+        41,
+        16,
+        83
+      ]
+    ]
+  }
+}

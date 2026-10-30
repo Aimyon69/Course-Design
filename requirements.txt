@@ -1,0 +1,15 @@
+# torch
+torch>=2.0
+
+# 预训练编码器
+transformers>=4.40
+
+# 数据处理与指标
+numpy
+pandas
+scikit-learn
+openpyxl
+
+# 音视频解码 / 人脸
+opencv-python
+imageio-ffmpeg

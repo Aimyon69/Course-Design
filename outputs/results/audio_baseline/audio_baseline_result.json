@@ -1,0 +1,77 @@
+{
+  "task": "CH-SIMS 语音单模态三分类（chinese-wav2vec2-base 冻结特征，时序均值池化）",
+  "feature": {
+    "model": "TencentGameMate/chinese-wav2vec2-base",
+    "dim": 768,
+    "pooling": "mean_over_time"
+  },
+  "seed": 42,
+  "split": {
+    "train": 1368,
+    "valid": 456,
+    "test": 457
+  },
+  "mlp_head": {
+    "accuracy": 0.4551,
+    "macro_f1": 0.4114,
+    "per_class_f1": {
+      "Negative": 0.5783,
+      "Neutral": 0.2995,
+      "Positive": 0.3563
+    },
+    "confusion_matrix": [
+      [
+        133,
+        70,
+        45
+      ],
+      [
+        20,
+        31,
+        18
+      ],
+      [
+        59,
+        37,
+        44
+      ]
+    ],
+    "best_valid_macro_f1": 0.3856,
+    "best_epoch": 5
+  },
+  "logistic_regression": {
+    "accuracy": 0.4748,
+    "macro_f1": 0.4449,
+    "per_class_f1": {
+      "Negative": 0.5695,
+      "Neutral": 0.3736,
+      "Positive": 0.3916
+    },
+    "confusion_matrix": [
+      [
+        127,
+        53,
+        68
+      ],
+      [
+        13,
+        34,
+        22
+      ],
+      [
+        58,
+        26,
+        56
+      ]
+    ]
+  },
+  "test_quality_diagnostics": {
+    "speech_frac_mean": 0.5734,
+    "speech_frac_median": 0.5831,
+    "snr_db_median": 21.15,
+    "dur_sec_mean": 3.665,
+    "point_biserial_speech_frac_vs_correct": -0.0315,
+    "accuracy_low_speech_frac_half": 0.4803,
+    "accuracy_high_speech_frac_half": 0.4298
+  }
+}

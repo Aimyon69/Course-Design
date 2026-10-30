@@ -1,0 +1,573 @@
+{
+  "method": "lmf_gate_pert",
+  "seed": 42,
+  "gated": true,
+  "augmented": true,
+  "n_params": 129774,
+  "best_valid_macro_f1": 0.5164,
+  "best_epoch": 7,
+  "config": {
+    "hidden_dims": {
+      "text": 64,
+      "vision": 16,
+      "audio": 64
+    },
+    "rank": 4,
+    "lmf_dropout": 0.2,
+    "gate_hidden": 8,
+    "gate_init": 0.0,
+    "pert_modalities": [
+      "text",
+      "vision",
+      "audio"
+    ],
+    "p_pert": 0.0,
+    "p_miss": 0.08
+  },
+  "conditions": {
+    "clean": {
+      "accuracy": 0.6477,
+      "macro_f1": 0.5763,
+      "per_class_f1": {
+        "Negative": 0.7593,
+        "Neutral": 0.3418,
+        "Positive": 0.6277
+      },
+      "confusion_matrix": [
+        [
+          183,
+          34,
+          31
+        ],
+        [
+          25,
+          27,
+          17
+        ],
+        [
+          26,
+          28,
+          86
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.8942,
+        "vision": 0.8701,
+        "audio": 0.8632
+      }
+    },
+    "audio_snr10": {
+      "accuracy": 0.6499,
+      "macro_f1": 0.5777,
+      "per_class_f1": {
+        "Negative": 0.7714,
+        "Neutral": 0.3515,
+        "Positive": 0.61
+      },
+      "confusion_matrix": [
+        [
+          189,
+          33,
+          26
+        ],
+        [
+          26,
+          29,
+          14
+        ],
+        [
+          27,
+          34,
+          79
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.8942,
+        "vision": 0.8701,
+        "audio": 0.8653
+      }
+    },
+    "audio_snr5": {
+      "accuracy": 0.6324,
+      "macro_f1": 0.5633,
+      "per_class_f1": {
+        "Negative": 0.7651,
+        "Neutral": 0.339,
+        "Positive": 0.5859
+      },
+      "confusion_matrix": [
+        [
+          184,
+          37,
+          27
+        ],
+        [
+          25,
+          30,
+          14
+        ],
+        [
+          24,
+          41,
+          75
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.8942,
+        "vision": 0.8701,
+        "audio": 0.8662
+      }
+    },
+    "audio_snr0": {
+      "accuracy": 0.6258,
+      "macro_f1": 0.5653,
+      "per_class_f1": {
+        "Negative": 0.7505,
+        "Neutral": 0.3511,
+        "Positive": 0.5944
+      },
+      "confusion_matrix": [
+        [
+          179,
+          46,
+          23
+        ],
+        [
+          24,
+          33,
+          12
+        ],
+        [
+          26,
+          40,
+          74
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.8942,
+        "vision": 0.8701,
+        "audio": 0.867
+      }
+    },
+    "vision_occ20": {
+      "accuracy": 0.6586,
+      "macro_f1": 0.5822,
+      "per_class_f1": {
+        "Negative": 0.7699,
+        "Neutral": 0.3467,
+        "Positive": 0.63
+      },
+      "confusion_matrix": [
+        [
+          189,
+          28,
+          31
+        ],
+        [
+          27,
+          26,
+          16
+        ],
+        [
+          27,
+          27,
+          86
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.8942,
+        "vision": 0.8693,
+        "audio": 0.8632
+      }
+    },
+    "vision_occ40": {
+      "accuracy": 0.6455,
+      "macro_f1": 0.5737,
+      "per_class_f1": {
+        "Negative": 0.7572,
+        "Neutral": 0.3506,
+        "Positive": 0.6131
+      },
+      "confusion_matrix": [
+        [
+          184,
+          30,
+          34
+        ],
+        [
+          26,
+          27,
+          16
+        ],
+        [
+          28,
+          28,
+          84
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.8942,
+        "vision": 0.8687,
+        "audio": 0.8632
+      }
+    },
+    "vision_occ60": {
+      "accuracy": 0.6455,
+      "macro_f1": 0.5724,
+      "per_class_f1": {
+        "Negative": 0.7592,
+        "Neutral": 0.3529,
+        "Positive": 0.6052
+      },
+      "confusion_matrix": [
+        [
+          186,
+          29,
+          33
+        ],
+        [
+          26,
+          27,
+          16
+        ],
+        [
+          30,
+          28,
+          82
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.8942,
+        "vision": 0.8684,
+        "audio": 0.8632
+      }
+    },
+    "text_corr10": {
+      "accuracy": 0.5974,
+      "macro_f1": 0.5332,
+      "per_class_f1": {
+        "Negative": 0.7035,
+        "Neutral": 0.3354,
+        "Positive": 0.5606
+      },
+      "confusion_matrix": [
+        [
+          172,
+          39,
+          37
+        ],
+        [
+          29,
+          27,
+          13
+        ],
+        [
+          40,
+          26,
+          74
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.8942,
+        "vision": 0.8701,
+        "audio": 0.8632
+      }
+    },
+    "text_corr20": {
+      "accuracy": 0.5602,
+      "macro_f1": 0.4882,
+      "per_class_f1": {
+        "Negative": 0.6788,
+        "Neutral": 0.2683,
+        "Positive": 0.5176
+      },
+      "confusion_matrix": [
+        [
+          168,
+          47,
+          33
+        ],
+        [
+          31,
+          22,
+          16
+        ],
+        [
+          48,
+          26,
+          66
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.8942,
+        "vision": 0.8701,
+        "audio": 0.8632
+      }
+    },
+    "text_corr30": {
+      "accuracy": 0.523,
+      "macro_f1": 0.4613,
+      "per_class_f1": {
+        "Negative": 0.6556,
+        "Neutral": 0.2737,
+        "Positive": 0.4545
+      },
+      "confusion_matrix": [
+        [
+          158,
+          55,
+          35
+        ],
+        [
+          31,
+          26,
+          12
+        ],
+        [
+          45,
+          40,
+          55
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.8942,
+        "vision": 0.8701,
+        "audio": 0.8632
+      }
+    },
+    "missing_text": {
+      "accuracy": 0.3392,
+      "macro_f1": 0.2954,
+      "per_class_f1": {
+        "Negative": 0.2178,
+        "Neutral": 0.224,
+        "Positive": 0.4444
+      },
+      "confusion_matrix": [
+        [
+          33,
+          24,
+          191
+        ],
+        [
+          8,
+          14,
+          47
+        ],
+        [
+          14,
+          18,
+          108
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.0,
+        "vision": 0.8701,
+        "audio": 0.8632
+      }
+    },
+    "missing_vision": {
+      "accuracy": 0.6543,
+      "macro_f1": 0.5569,
+      "per_class_f1": {
+        "Negative": 0.7704,
+        "Neutral": 0.2836,
+        "Positive": 0.6165
+      },
+      "confusion_matrix": [
+        [
+          198,
+          22,
+          28
+        ],
+        [
+          34,
+          19,
+          16
+        ],
+        [
+          34,
+          24,
+          82
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.8942,
+        "vision": 0.0,
+        "audio": 0.8632
+      }
+    },
+    "missing_audio": {
+      "accuracy": 0.6433,
+      "macro_f1": 0.5808,
+      "per_class_f1": {
+        "Negative": 0.7569,
+        "Neutral": 0.3563,
+        "Positive": 0.6292
+      },
+      "confusion_matrix": [
+        [
+          179,
+          40,
+          29
+        ],
+        [
+          24,
+          31,
+          14
+        ],
+        [
+          22,
+          34,
+          84
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.8942,
+        "vision": 0.8701,
+        "audio": 0.0
+      }
+    },
+    "missing_text+vision": {
+      "accuracy": 0.3851,
+      "macro_f1": 0.2776,
+      "per_class_f1": {
+        "Negative": 0.4299,
+        "Neutral": 0.0,
+        "Positive": 0.403
+      },
+      "confusion_matrix": [
+        [
+          95,
+          1,
+          152
+        ],
+        [
+          40,
+          0,
+          29
+        ],
+        [
+          59,
+          0,
+          81
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.0,
+        "vision": 0.0,
+        "audio": 0.8632
+      }
+    },
+    "missing_text+audio": {
+      "accuracy": 0.3392,
+      "macro_f1": 0.3338,
+      "per_class_f1": {
+        "Negative": 0.3174,
+        "Neutral": 0.3077,
+        "Positive": 0.3763
+      },
+      "confusion_matrix": [
+        [
+          53,
+          60,
+          135
+        ],
+        [
+          10,
+          32,
+          27
+        ],
+        [
+          23,
+          47,
+          70
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.0,
+        "vision": 0.8701,
+        "audio": 0.0
+      }
+    },
+    "missing_vision+audio": {
+      "accuracy": 0.6521,
+      "macro_f1": 0.5708,
+      "per_class_f1": {
+        "Negative": 0.7717,
+        "Neutral": 0.3399,
+        "Positive": 0.6008
+      },
+      "confusion_matrix": [
+        [
+          196,
+          27,
+          25
+        ],
+        [
+          31,
+          26,
+          12
+        ],
+        [
+          33,
+          31,
+          76
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.8942,
+        "vision": 0.0,
+        "audio": 0.0
+      }
+    },
+    "audio_snr5+vision_occ40": {
+      "accuracy": 0.6346,
+      "macro_f1": 0.5667,
+      "per_class_f1": {
+        "Negative": 0.7645,
+        "Neutral": 0.3483,
+        "Positive": 0.5873
+      },
+      "confusion_matrix": [
+        [
+          185,
+          38,
+          25
+        ],
+        [
+          25,
+          31,
+          13
+        ],
+        [
+          26,
+          40,
+          74
+        ]
+      ],
+      "n": 457,
+      "gate_mean": {
+        "text": 0.8942,
+        "vision": 0.8687,
+        "audio": 0.8662
+      }
+    }
+  }
+}

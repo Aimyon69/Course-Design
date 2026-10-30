@@ -1,0 +1,63 @@
+{
+  "task": "CH-SIMS 视觉单模态三分类（CLIP-ViT-B/32 冻结特征，T=8 帧平均池化）",
+  "seed": 42,
+  "split": {
+    "train": 1368,
+    "valid": 456,
+    "test": 457
+  },
+  "mlp_head": {
+    "accuracy": 0.6236,
+    "macro_f1": 0.5843,
+    "per_class_f1": {
+      "Negative": 0.71,
+      "Neutral": 0.4205,
+      "Positive": 0.6226
+    },
+    "confusion_matrix": [
+      [
+        164,
+        55,
+        29
+      ],
+      [
+        20,
+        41,
+        8
+      ],
+      [
+        30,
+        30,
+        80
+      ]
+    ],
+    "best_valid_macro_f1": 0.5564,
+    "best_epoch": 3
+  },
+  "logistic_regression": {
+    "accuracy": 0.5996,
+    "macro_f1": 0.5396,
+    "per_class_f1": {
+      "Negative": 0.6855,
+      "Neutral": 0.3226,
+      "Positive": 0.6107
+    },
+    "confusion_matrix": [
+      [
+        158,
+        40,
+        50
+      ],
+      [
+        27,
+        25,
+        17
+      ],
+      [
+        28,
+        21,
+        91
+      ]
+    ]
+  }
+}

@@ -1,0 +1,483 @@
+{
+  "method": "lmf_pert",
+  "seed": 7,
+  "gated": false,
+  "augmented": true,
+  "n_params": 129691,
+  "best_valid_macro_f1": 0.5355,
+  "best_epoch": 76,
+  "config": {
+    "hidden_dims": {
+      "text": 64,
+      "vision": 16,
+      "audio": 64
+    },
+    "rank": 4,
+    "lmf_dropout": 0.2,
+    "gate_hidden": null,
+    "gate_init": null,
+    "p_pert": 0.4,
+    "p_miss": 0.08
+  },
+  "conditions": {
+    "clean": {
+      "accuracy": 0.6346,
+      "macro_f1": 0.5341,
+      "per_class_f1": {
+        "Negative": 0.7445,
+        "Neutral": 0.2308,
+        "Positive": 0.6272
+      },
+      "confusion_matrix": [
+        [
+          185,
+          27,
+          36
+        ],
+        [
+          33,
+          15,
+          21
+        ],
+        [
+          31,
+          19,
+          90
+        ]
+      ],
+      "n": 457
+    },
+    "audio_snr10": {
+      "accuracy": 0.6324,
+      "macro_f1": 0.5348,
+      "per_class_f1": {
+        "Negative": 0.743,
+        "Neutral": 0.2462,
+        "Positive": 0.6154
+      },
+      "confusion_matrix": [
+        [
+          185,
+          26,
+          37
+        ],
+        [
+          32,
+          16,
+          21
+        ],
+        [
+          33,
+          19,
+          88
+        ]
+      ],
+      "n": 457
+    },
+    "audio_snr5": {
+      "accuracy": 0.6302,
+      "macro_f1": 0.5305,
+      "per_class_f1": {
+        "Negative": 0.7404,
+        "Neutral": 0.2308,
+        "Positive": 0.6202
+      },
+      "confusion_matrix": [
+        [
+          184,
+          27,
+          37
+        ],
+        [
+          33,
+          15,
+          21
+        ],
+        [
+          32,
+          19,
+          89
+        ]
+      ],
+      "n": 457
+    },
+    "audio_snr0": {
+      "accuracy": 0.628,
+      "macro_f1": 0.529,
+      "per_class_f1": {
+        "Negative": 0.7379,
+        "Neutral": 0.229,
+        "Positive": 0.6202
+      },
+      "confusion_matrix": [
+        [
+          183,
+          28,
+          37
+        ],
+        [
+          33,
+          15,
+          21
+        ],
+        [
+          32,
+          19,
+          89
+        ]
+      ],
+      "n": 457
+    },
+    "vision_occ20": {
+      "accuracy": 0.6258,
+      "macro_f1": 0.5234,
+      "per_class_f1": {
+        "Negative": 0.7312,
+        "Neutral": 0.224,
+        "Positive": 0.6148
+      },
+      "confusion_matrix": [
+        [
+          185,
+          26,
+          37
+        ],
+        [
+          36,
+          14,
+          19
+        ],
+        [
+          37,
+          16,
+          87
+        ]
+      ],
+      "n": 457
+    },
+    "vision_occ40": {
+      "accuracy": 0.6346,
+      "macro_f1": 0.5277,
+      "per_class_f1": {
+        "Negative": 0.7413,
+        "Neutral": 0.2353,
+        "Positive": 0.6065
+      },
+      "confusion_matrix": [
+        [
+          192,
+          22,
+          34
+        ],
+        [
+          36,
+          14,
+          19
+        ],
+        [
+          42,
+          14,
+          84
+        ]
+      ],
+      "n": 457
+    },
+    "vision_occ60": {
+      "accuracy": 0.6411,
+      "macro_f1": 0.5336,
+      "per_class_f1": {
+        "Negative": 0.7452,
+        "Neutral": 0.2414,
+        "Positive": 0.6143
+      },
+      "confusion_matrix": [
+        [
+          193,
+          20,
+          35
+        ],
+        [
+          36,
+          14,
+          19
+        ],
+        [
+          41,
+          13,
+          86
+        ]
+      ],
+      "n": 457
+    },
+    "text_corr10": {
+      "accuracy": 0.6083,
+      "macro_f1": 0.5067,
+      "per_class_f1": {
+        "Negative": 0.7098,
+        "Neutral": 0.208,
+        "Positive": 0.6022
+      },
+      "confusion_matrix": [
+        [
+          181,
+          28,
+          39
+        ],
+        [
+          40,
+          13,
+          16
+        ],
+        [
+          41,
+          15,
+          84
+        ]
+      ],
+      "n": 457
+    },
+    "text_corr20": {
+      "accuracy": 0.6061,
+      "macro_f1": 0.5173,
+      "per_class_f1": {
+        "Negative": 0.7162,
+        "Neutral": 0.2927,
+        "Positive": 0.5429
+      },
+      "confusion_matrix": [
+        [
+          183,
+          21,
+          44
+        ],
+        [
+          31,
+          18,
+          20
+        ],
+        [
+          49,
+          15,
+          76
+        ]
+      ],
+      "n": 457
+    },
+    "text_corr30": {
+      "accuracy": 0.5186,
+      "macro_f1": 0.4204,
+      "per_class_f1": {
+        "Negative": 0.6446,
+        "Neutral": 0.1429,
+        "Positive": 0.4737
+      },
+      "confusion_matrix": [
+        [
+          156,
+          27,
+          65
+        ],
+        [
+          33,
+          9,
+          27
+        ],
+        [
+          47,
+          21,
+          72
+        ]
+      ],
+      "n": 457
+    },
+    "missing_text": {
+      "accuracy": 0.453,
+      "macro_f1": 0.4407,
+      "per_class_f1": {
+        "Negative": 0.5,
+        "Neutral": 0.3237,
+        "Positive": 0.4983
+      },
+      "confusion_matrix": [
+        [
+          94,
+          88,
+          66
+        ],
+        [
+          13,
+          39,
+          17
+        ],
+        [
+          21,
+          45,
+          74
+        ]
+      ],
+      "n": 457
+    },
+    "missing_vision": {
+      "accuracy": 0.6193,
+      "macro_f1": 0.5154,
+      "per_class_f1": {
+        "Negative": 0.7276,
+        "Neutral": 0.2016,
+        "Positive": 0.617
+      },
+      "confusion_matrix": [
+        [
+          183,
+          30,
+          35
+        ],
+        [
+          36,
+          13,
+          20
+        ],
+        [
+          36,
+          17,
+          87
+        ]
+      ],
+      "n": 457
+    },
+    "missing_audio": {
+      "accuracy": 0.6302,
+      "macro_f1": 0.5305,
+      "per_class_f1": {
+        "Negative": 0.7404,
+        "Neutral": 0.2308,
+        "Positive": 0.6202
+      },
+      "confusion_matrix": [
+        [
+          184,
+          27,
+          37
+        ],
+        [
+          33,
+          15,
+          21
+        ],
+        [
+          32,
+          19,
+          89
+        ]
+      ],
+      "n": 457
+    },
+    "missing_text+vision": {
+      "accuracy": 0.2845,
+      "macro_f1": 0.2173,
+      "per_class_f1": {
+        "Negative": 0.0692,
+        "Neutral": 0.1384,
+        "Positive": 0.4444
+      },
+      "confusion_matrix": [
+        [
+          9,
+          51,
+          188
+        ],
+        [
+          1,
+          11,
+          57
+        ],
+        [
+          2,
+          28,
+          110
+        ]
+      ],
+      "n": 457
+    },
+    "missing_text+audio": {
+      "accuracy": 0.4486,
+      "macro_f1": 0.4364,
+      "per_class_f1": {
+        "Negative": 0.5053,
+        "Neutral": 0.3158,
+        "Positive": 0.488
+      },
+      "confusion_matrix": [
+        [
+          95,
+          90,
+          63
+        ],
+        [
+          13,
+          39,
+          17
+        ],
+        [
+          20,
+          49,
+          71
+        ]
+      ],
+      "n": 457
+    },
+    "missing_vision+audio": {
+      "accuracy": 0.6127,
+      "macro_f1": 0.5071,
+      "per_class_f1": {
+        "Negative": 0.7211,
+        "Neutral": 0.1875,
+        "Positive": 0.6127
+      },
+      "confusion_matrix": [
+        [
+          181,
+          30,
+          37
+        ],
+        [
+          37,
+          12,
+          20
+        ],
+        [
+          36,
+          17,
+          87
+        ]
+      ],
+      "n": 457
+    },
+    "audio_snr5+vision_occ40": {
+      "accuracy": 0.6236,
+      "macro_f1": 0.5186,
+      "per_class_f1": {
+        "Negative": 0.7354,
+        "Neutral": 0.224,
+        "Positive": 0.5964
+      },
+      "confusion_matrix": [
+        [
+          189,
+          25,
+          34
+        ],
+        [
+          36,
+          14,
+          19
+        ],
+        [
+          41,
+          17,
+          82
+        ]
+      ],
+      "n": 457
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "task": "CH-SIMS 三模态融合（concat）",
+  "method": "concat",
+  "config": {
+    "hidden": 64,
+    "dropout": 0.3
+  },
+  "seed": 42,
+  "split": {
+    "train": 1368,
+    "valid": 456,
+    "test": 457
+  },
+  "feature_dims": {
+    "text": 768,
+    "vision": 512,
+    "audio": 768
+  },
+  "feature_models": {
+    "text": "bert-base-chinese",
+    "vision": "openai/clip-vit-base-patch32",
+    "audio": "TencentGameMate/chinese-wav2vec2-base"
+  },
+  "n_params": 131331,
+  "accuracy": 0.7462,
+  "macro_f1": 0.6673,
+  "per_class_f1": {
+    "Negative": 0.8277,
+    "Neutral": 0.4179,
+    "Positive": 0.7564
+  },
+  "confusion_matrix": [
+    [
+      209,
+      22,
+      17
+    ],
+    [
+      27,
+      28,
+      14
+    ],
+    [
+      21,
+      15,
+      104
+    ]
+  ],
+  "best_valid_macro_f1": 0.6043,
+  "best_epoch": 31
+}

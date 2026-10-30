@@ -1,0 +1,56 @@
+{
+  "task": "CH-SIMS 三模态融合（lmf）",
+  "method": "lmf",
+  "config": {
+    "hidden_dims": {
+      "text": 64,
+      "vision": 16,
+      "audio": 64
+    },
+    "rank": 4,
+    "dropout": 0.2
+  },
+  "seed": 42,
+  "split": {
+    "train": 1368,
+    "valid": 456,
+    "test": 457
+  },
+  "feature_dims": {
+    "text": 768,
+    "vision": 512,
+    "audio": 768
+  },
+  "feature_models": {
+    "text": "bert-base-chinese",
+    "vision": "openai/clip-vit-base-patch32",
+    "audio": "TencentGameMate/chinese-wav2vec2-base"
+  },
+  "n_params": 129691,
+  "accuracy": 0.674,
+  "macro_f1": 0.5831,
+  "per_class_f1": {
+    "Negative": 0.7675,
+    "Neutral": 0.3231,
+    "Positive": 0.6588
+  },
+  "confusion_matrix": [
+    [
+      203,
+      25,
+      20
+    ],
+    [
+      37,
+      21,
+      11
+    ],
+    [
+      41,
+      15,
+      84
+    ]
+  ],
+  "best_valid_macro_f1": 0.5832,
+  "best_epoch": 18
+}

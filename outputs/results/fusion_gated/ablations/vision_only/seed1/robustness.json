@@ -1,0 +1,327 @@
+{
+  "lmf_pert": {
+    "n_params": 129691,
+    "best_valid_macro_f1": 0.53,
+    "best_epoch": 5,
+    "conditions": {
+      "clean": {
+        "accuracy": 0.6783,
+        "macro_f1": 0.5805,
+        "gate_mean": null
+      },
+      "audio_snr10": {
+        "accuracy": 0.6783,
+        "macro_f1": 0.5577,
+        "gate_mean": null
+      },
+      "audio_snr5": {
+        "accuracy": 0.6783,
+        "macro_f1": 0.5577,
+        "gate_mean": null
+      },
+      "audio_snr0": {
+        "accuracy": 0.6827,
+        "macro_f1": 0.5613,
+        "gate_mean": null
+      },
+      "vision_occ20": {
+        "accuracy": 0.674,
+        "macro_f1": 0.5723,
+        "gate_mean": null
+      },
+      "vision_occ40": {
+        "accuracy": 0.6761,
+        "macro_f1": 0.5776,
+        "gate_mean": null
+      },
+      "vision_occ60": {
+        "accuracy": 0.6805,
+        "macro_f1": 0.5856,
+        "gate_mean": null
+      },
+      "text_corr10": {
+        "accuracy": 0.6324,
+        "macro_f1": 0.5288,
+        "gate_mean": null
+      },
+      "text_corr20": {
+        "accuracy": 0.5996,
+        "macro_f1": 0.4763,
+        "gate_mean": null
+      },
+      "text_corr30": {
+        "accuracy": 0.5624,
+        "macro_f1": 0.4351,
+        "gate_mean": null
+      },
+      "missing_text": {
+        "accuracy": 0.4945,
+        "macro_f1": 0.306,
+        "gate_mean": null
+      },
+      "missing_vision": {
+        "accuracy": 0.674,
+        "macro_f1": 0.5731,
+        "gate_mean": null
+      },
+      "missing_audio": {
+        "accuracy": 0.6193,
+        "macro_f1": 0.5679,
+        "gate_mean": null
+      },
+      "missing_text+vision": {
+        "accuracy": 0.5208,
+        "macro_f1": 0.2517,
+        "gate_mean": null
+      },
+      "missing_text+audio": {
+        "accuracy": 0.1663,
+        "macro_f1": 0.1325,
+        "gate_mean": null
+      },
+      "missing_vision+audio": {
+        "accuracy": 0.6149,
+        "macro_f1": 0.5632,
+        "gate_mean": null
+      },
+      "audio_snr5+vision_occ40": {
+        "accuracy": 0.6827,
+        "macro_f1": 0.5595,
+        "gate_mean": null
+      }
+    }
+  },
+  "lmf_gate_pert": {
+    "n_params": 129774,
+    "best_valid_macro_f1": 0.5429,
+    "best_epoch": 26,
+    "conditions": {
+      "clean": {
+        "accuracy": 0.6718,
+        "macro_f1": 0.5992,
+        "gate_mean": {
+          "text": 0.9,
+          "vision": 0.8402,
+          "audio": 0.8757
+        }
+      },
+      "audio_snr10": {
+        "accuracy": 0.6521,
+        "macro_f1": 0.5592,
+        "gate_mean": {
+          "text": 0.9,
+          "vision": 0.8402,
+          "audio": 0.8761
+        }
+      },
+      "audio_snr5": {
+        "accuracy": 0.6565,
+        "macro_f1": 0.5593,
+        "gate_mean": {
+          "text": 0.9,
+          "vision": 0.8402,
+          "audio": 0.8762
+        }
+      },
+      "audio_snr0": {
+        "accuracy": 0.6586,
+        "macro_f1": 0.5647,
+        "gate_mean": {
+          "text": 0.9,
+          "vision": 0.8402,
+          "audio": 0.8762
+        }
+      },
+      "vision_occ20": {
+        "accuracy": 0.6761,
+        "macro_f1": 0.6052,
+        "gate_mean": {
+          "text": 0.9,
+          "vision": 0.8378,
+          "audio": 0.8757
+        }
+      },
+      "vision_occ40": {
+        "accuracy": 0.6674,
+        "macro_f1": 0.5913,
+        "gate_mean": {
+          "text": 0.9,
+          "vision": 0.8363,
+          "audio": 0.8757
+        }
+      },
+      "vision_occ60": {
+        "accuracy": 0.663,
+        "macro_f1": 0.5847,
+        "gate_mean": {
+          "text": 0.9,
+          "vision": 0.8358,
+          "audio": 0.8757
+        }
+      },
+      "text_corr10": {
+        "accuracy": 0.628,
+        "macro_f1": 0.5493,
+        "gate_mean": {
+          "text": 0.9,
+          "vision": 0.8402,
+          "audio": 0.8757
+        }
+      },
+      "text_corr20": {
+        "accuracy": 0.5689,
+        "macro_f1": 0.4765,
+        "gate_mean": {
+          "text": 0.9,
+          "vision": 0.8402,
+          "audio": 0.8757
+        }
+      },
+      "text_corr30": {
+        "accuracy": 0.5624,
+        "macro_f1": 0.4685,
+        "gate_mean": {
+          "text": 0.9,
+          "vision": 0.8402,
+          "audio": 0.8757
+        }
+      },
+      "missing_text": {
+        "accuracy": 0.3742,
+        "macro_f1": 0.3725,
+        "gate_mean": {
+          "text": 0.0,
+          "vision": 0.8402,
+          "audio": 0.8757
+        }
+      },
+      "missing_vision": {
+        "accuracy": 0.6652,
+        "macro_f1": 0.582,
+        "gate_mean": {
+          "text": 0.9,
+          "vision": 0.0,
+          "audio": 0.8757
+        }
+      },
+      "missing_audio": {
+        "accuracy": 0.6521,
+        "macro_f1": 0.5818,
+        "gate_mean": {
+          "text": 0.9,
+          "vision": 0.8402,
+          "audio": 0.0
+        }
+      },
+      "missing_text+vision": {
+        "accuracy": 0.3239,
+        "macro_f1": 0.323,
+        "gate_mean": {
+          "text": 0.0,
+          "vision": 0.0,
+          "audio": 0.8757
+        }
+      },
+      "missing_text+audio": {
+        "accuracy": 0.2341,
+        "macro_f1": 0.2183,
+        "gate_mean": {
+          "text": 0.0,
+          "vision": 0.8402,
+          "audio": 0.0
+        }
+      },
+      "missing_vision+audio": {
+        "accuracy": 0.6324,
+        "macro_f1": 0.556,
+        "gate_mean": {
+          "text": 0.9,
+          "vision": 0.0,
+          "audio": 0.0
+        }
+      },
+      "audio_snr5+vision_occ40": {
+        "accuracy": 0.6608,
+        "macro_f1": 0.5738,
+        "gate_mean": {
+          "text": 0.9,
+          "vision": 0.8363,
+          "audio": 0.8762
+        }
+      }
+    }
+  },
+  "concat_reference": {
+    "n_params": 131331,
+    "conditions": {
+      "clean": {
+        "accuracy": 0.7462,
+        "macro_f1": 0.6673
+      },
+      "audio_snr10": {
+        "accuracy": 0.709,
+        "macro_f1": 0.6355
+      },
+      "audio_snr5": {
+        "accuracy": 0.7024,
+        "macro_f1": 0.6362
+      },
+      "audio_snr0": {
+        "accuracy": 0.7199,
+        "macro_f1": 0.6479
+      },
+      "vision_occ20": {
+        "accuracy": 0.6761,
+        "macro_f1": 0.5521
+      },
+      "vision_occ40": {
+        "accuracy": 0.6674,
+        "macro_f1": 0.5082
+      },
+      "vision_occ60": {
+        "accuracy": 0.6499,
+        "macro_f1": 0.4967
+      },
+      "text_corr10": {
+        "accuracy": 0.7024,
+        "macro_f1": 0.6234
+      },
+      "text_corr20": {
+        "accuracy": 0.6652,
+        "macro_f1": 0.5765
+      },
+      "text_corr30": {
+        "accuracy": 0.628,
+        "macro_f1": 0.5692
+      },
+      "missing_text": {
+        "accuracy": 0.6521,
+        "macro_f1": 0.5537
+      },
+      "missing_vision": {
+        "accuracy": 0.6718,
+        "macro_f1": 0.567
+      },
+      "missing_audio": {
+        "accuracy": 0.7221,
+        "macro_f1": 0.6547
+      },
+      "missing_text+vision": {
+        "accuracy": 0.523,
+        "macro_f1": 0.2835
+      },
+      "missing_text+audio": {
+        "accuracy": 0.6236,
+        "macro_f1": 0.5602
+      },
+      "missing_vision+audio": {
+        "accuracy": 0.6258,
+        "macro_f1": 0.54
+      },
+      "audio_snr5+vision_occ40": {
+        "accuracy": 0.6214,
+        "macro_f1": 0.476
+      }
+    }
+  }
+}
